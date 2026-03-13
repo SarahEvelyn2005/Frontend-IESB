@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TechStore - As melhores ofertas de tecnologia"
+    />
+    <title>TechStore - Loja de Eletrônicos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header class="header">
+      <div class="header-container">
+        <!-- Logo à esquerda -->
+        <div class="logo">
+          <span class="logo-icon">⚡</span>
+          <h1 class="logo-text">Tech<span>Store</span></h1>
+        </div>
+
+        <!-- Navegação -->
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Início</a></li>
+            <li><a href="#produtos" class="nav-link">Produtos</a></li>
+            <li><a href="#" class="nav-link">Ofertas</a></li>
+            <li><a href="#contato" class="nav-link">Contato</a></li>
+          </ul>
+        </nav>
+
+        <!-- Carrinho à direita -->
+        <div class="cart">
+          <button class="cart-button" aria-label="Carrinho de compras">
+            <svg
+              class="cart-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path
+                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+              ></path>
+            </svg>
+            <span class="cart-counter">3</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2 class="hero-title">As melhores ofertas de tecnologia</h2>
+        <p class="hero-subtitle">
+          Encontre os produtos mais inovadores com os melhores preços do mercado
+        </p>
+        <a href="#produtos" class="hero-button">Ver Produtos</a>
+      </div>
+    </section>
+
+    <!-- ========== VITRINE DE PRODUTOS ========== -->
+    <main class="main-content">
+      <section id="produtos" class="products-section">
+        <div class="section-header">
+          <h2 class="section-title">Nossos Produtos</h2>
+          <p class="section-subtitle">Confira nossa seleção de eletrônicos</p>
+        </div>
+
+        <!-- Grid de Produtos usando Flexbox -->
+        <div class="products-grid">
+          <!-- Card 1 -->
+          <article class="product-card">
+            <div class="product-badge">Novo</div>
+            <div class="product-image">
+              <div class="product-placeholder">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Smartphones</span>
+              <h3 class="product-name">Smartphone Pro Max 256GB</h3>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(128)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-old">R$ 5.999,00</span>
+                <span class="price-current">R$ 4.299,00</span>
+              </div>
+              <button class="product-button">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-card">
+            <div class="product-badge sale">-30%</div>
+            <div class="product-image">
+              <div class="product-placeholder">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Notebooks</span>
+              <h3 class="product-name">Notebook Ultra Slim 15"</h3>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(89)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-old">R$ 7.500,00</span>
+                <span class="price-current">R$ 5.250,00</span>
+              </div>
+              <button class="product-button">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card">
+            <div class="product-image">
+              <div class="product-placeholder">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                  <path
+                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Áudio</span>
+              <h3 class="product-name">Fone Bluetooth Premium</h3>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(256)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-old">R$ 899,00</span>
+                <span class="price-current">R$ 649,00</span>
+              </div>
+              <button class="product-button">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product-card">
+            <div class="product-badge">Destaque</div>
+            <div class="product-image">
+              <div class="product-placeholder">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                  <polyline points="17 2 12 7 7 2"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">TVs</span>
+              <h3 class="product-name">Smart TV 55" 4K UHD</h3>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(74)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-old">R$ 4.200,00</span>
+                <span class="price-current">R$ 3.199,00</span>
+              </div>
+              <button class="product-button">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="product-card">
+            <div class="product-badge sale">-20%</div>
+            <div class="product-image">
+              <div class="product-placeholder">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                  <rect x="9" y="9" width="6" height="6"></rect>
+                  <line x1="9" y1="1" x2="9" y2="4"></line>
+                  <line x1="15" y1="1" x2="15" y2="4"></line>
+                  <line x1="9" y1="20" x2="9" y2="23"></line>
+                  <line x1="15" y1="20" x2="15" y2="23"></line>
+                  <line x1="20" y1="9" x2="23" y2="9"></line>
+                  <line x1="20" y1="14" x2="23" y2="14"></line>
+                  <line x1="1" y1="9" x2="4" y2="9"></line>
+                  <line x1="1" y1="14" x2="4" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Componentes</span>
+              <h3 class="product-name">Processador Extreme 12 núcleos</h3>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-count">(312)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-old">R$ 3.500,00</span>
+                <span class="price-current">R$ 2.800,00</span>
+              </div>
+              <button class="product-button">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="product-card">
+            <div class="product-badge">Novo</div>
+            <div class="product-image">
+              <div class="product-placeholder">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Wearables</span>
+              <h3 class="product-name">Smartwatch Sport Edition</h3>
+              <div class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-count">(198)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-old">R$ 1.299,00</span>
+                <span class="price-current">R$ 999,00</span>
+              </div>
+              <button class="product-button">Adicionar ao Carrinho</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="contato" class="footer">
+      <div class="footer-container">
+        <!-- Coluna 1 - Sobre -->
+        <div class="footer-column">
+          <div class="footer-logo">
+            <span class="logo-icon">⚡</span>
+            <h3>Tech<span>Store</span></h3>
+          </div>
+          <p class="footer-description">
+            Sua loja de confiança para produtos eletrônicos de alta qualidade.
+            Oferecemos os melhores preços e atendimento personalizado.
+          </p>
+        </div>
+
+        <!-- Coluna 2 - Links Rápidos -->
+        <div class="footer-column">
+          <h4 class="footer-title">Links Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3 - Contato -->
+        <div class="footer-column">
+          <h4 class="footer-title">Contato</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Av. Tecnologia, 1000 - São Paulo, SP
+            </li>
+            <li>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              (11) 99999-9999
+            </li>
+            <li>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              contato@techstore.com.br
+            </li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4 - Redes Sociais -->
+        <div class="footer-column">
+          <h4 class="footer-title">Redes Sociais</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"
+                ></path>
+                <polygon
+                  points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"
+                  fill="white"
+                ></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechStore. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
